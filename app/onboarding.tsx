@@ -1,9 +1,11 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useRouter } from "expo-router";
 import { images } from "@/constants/images";
 import { ChevronRight } from "lucide-react-native";
 
 export default function OnboardingScreen() {
+  const router = useRouter();
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
@@ -96,10 +98,7 @@ export default function OnboardingScreen() {
           <TouchableOpacity
             className="bg-primary-purple rounded-2xl py-4 px-8 flex-row items-center justify-center"
             activeOpacity={0.8}
-            onPress={() => {
-              // Navigate to next screen (will be implemented later)
-              console.log("Get Started pressed");
-            }}
+            onPress={() => router.push("/sign-up")}
             style={{
               shadowColor: "#6C4EF5",
               shadowOffset: { width: 0, height: 4 },

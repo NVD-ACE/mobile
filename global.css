@@ -1,0 +1,93 @@
+@import "nativewind";
+
+/**
+ * Typography Utilities
+ * Following BEM methodology for reusable typography patterns
+ */
+
+/* Heading Utilities */
+.text--h1 {
+  @apply text-h1 font-bold text-neutral-text;
+}
+
+.text--h2 {
+  @apply text-h2 font-semibold text-neutral-text;
+}
+
+.text--h3 {
+  @apply text-h3 font-semibold text-neutral-text;
+}
+
+.text--h4 {
+  @apply text-h4 font-medium text-neutral-text;
+}
+
+/* Body Text Utilities */
+.text--body-lg {
+  @apply text-body-lg font-regular text-neutral-text;
+}
+
+.text--body-md {
+  @apply text-body-md font-regular text-neutral-text;
+}
+
+.text--body-sm {
+  @apply text-body-sm font-regular text-neutral-text;
+}
+
+.text--caption {
+  @apply text-caption font-regular text-neutral-text-secondary;
+}
+
+/**
+ * Card Utilities
+ */
+.card {
+  @apply bg-white rounded-2xl shadow-sm;
+}
+
+.card--elevated {
+  @apply bg-white rounded-2xl shadow-md;
+}
+
+/**
+ * Button Utilities
+ */
+.btn {
+  @apply px-6 py-3 rounded-xl items-center justify-center;
+}
+
+.btn--primary {
+  @apply btn bg-primary-purple;
+}
+
+.btn--secondary {
+  @apply btn bg-neutral-surface;
+}
+
+.btn--success {
+  @apply btn bg-success;
+}
+
+/**
+ * Container Utilities
+ */
+.container--page {
+  @apply flex-1 bg-neutral-bg;
+}
+
+.container--section {
+  @apply px-5 py-4;
+}
+
+/**
+ * Input Utilities
+ */
+.input {
+  @apply px-4 py-3 rounded-xl bg-neutral-surface border border-neutral-border text-body-md font-regular text-neutral-text;
+}
+
+.input:focus {
+  @apply border-primary-purple;
+}
+
